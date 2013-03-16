@@ -5,10 +5,10 @@ __author__ = '@shomah4a'
 __license__ = 'GPLv3'
 
 
-from . import tweet
-
 
 def setup(app):
+
+    from . import tweet
 
     app.add_node(tweet.tweet,
                  html=(tweet.visit, tweet.depart))
