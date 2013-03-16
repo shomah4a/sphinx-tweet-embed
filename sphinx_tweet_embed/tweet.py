@@ -12,7 +12,7 @@ class tweet(nodes.General, nodes.Element):
 
 def visit(self, node):
 
-    tag = u'''<blockquote class="twitter-tweet"><a href="%s">&nbsp;</a></blockquote>''' % node.url
+    tag = u'''<blockquote class="twitter-tweet"><a href="%s">%s</a></blockquote>''' % (node.url, node.url)
 
     self.body.append(tag)
 
