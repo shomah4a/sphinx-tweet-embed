@@ -1,7 +1,7 @@
 #-*- coding:utf-8 -*-
 
 import setuptools
-import sphinx_tweet_embeded as pkg
+import sphinx_tweet_embed as pkg
 
 pkgname = pkg.__name__
 
@@ -14,7 +14,7 @@ setuptools.setup(
         ],
     author=pkg.__author__,
     license=pkg.__license__,
-    # url='https://github.com/shomah4a/sakuya',
+    url='https://github.com/shomah4a/sphinx-tweet-embed',
     description=u'',
     long_description=pkg.__doc__,
     entry_points={
