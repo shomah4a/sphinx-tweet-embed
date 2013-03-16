@@ -10,6 +10,8 @@ def setup(app):
 
     from . import tweet
 
+    app.add_javascript('http://platform.twitter.com/widgets.js')
+
     app.add_node(tweet.tweet,
                  html=(tweet.visit, tweet.depart))
     app.add_directive('tweet', tweet.TweetDirective)

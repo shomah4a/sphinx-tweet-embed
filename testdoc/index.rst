@@ -11,9 +11,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+.. tweet:: https://twitter.com/voluntas/status/311697168497000449
 
-.. tweet:: https://twitter.com/yosida95/status/312822728367407104
 
+.. tweet:: https://twitter.com/IanMLewis/status/311696561488924672
+
+
+.. tweet:: https://twitter.com/mizchi/status/311696358501392386
 
 
 Indices and tables

@@ -12,10 +12,7 @@ class tweet(nodes.General, nodes.Element):
 
 def visit(self, node):
 
-    tag = u'''<blockquote class="twitter-tweet"><a href="%s">&nbsp;</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    ''' % node.url
-
+    tag = u'''<blockquote class="twitter-tweet"><a href="%s">&nbsp;</a></blockquote>''' % node.url
 
     self.body.append(tag)
 
