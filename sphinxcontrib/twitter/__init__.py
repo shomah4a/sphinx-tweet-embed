@@ -8,7 +8,7 @@ First of all, add `sphinx_tweet_embed` to sphinx extension list in conf.py
 
 .. code-block:: python
 
-   extensions = ['sphinx_tweet_embed']
+   extensions = ['sphinxcontrib.twitter']
 
 
 then use `tweet` directive.
@@ -24,7 +24,6 @@ finally, build your sphinx project.
 .. code-block:: sh
 
    $ make html
-
 '''
 
 __version__ = '0.1.0'

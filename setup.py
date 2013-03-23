@@ -1,14 +1,14 @@
 #-*- coding:utf-8 -*-
 
 import setuptools
-import sphinx_tweet_embed as pkg
+from sphinxcontrib import twitter as pkg
 
 pkgname = pkg.__name__
 
 setuptools.setup(
     name=pkgname,
     version=pkg.__version__,
-    packages=[pkgname],
+    packages=setuptools.find_packages(),
     install_requires=[
         'sphinx'
         ],
@@ -17,6 +17,7 @@ setuptools.setup(
     url='https://github.com/shomah4a/sphinx-tweet-embed',
     description='''embedding twitter's tweet in sphinx''',
     long_description=pkg.__doc__,
+    namespace_packages=['sphinxcontrib'],
     classifiers='''
 Programming Language :: Python
 Development Status :: 4 - Beta
