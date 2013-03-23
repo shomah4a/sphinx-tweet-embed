@@ -18,7 +18,7 @@ then use `tweet` directive.
    .. tweet:: https://twitter.com/pypi/status/315214320826978305
 
 
-finally build your sphinx project.
+finally, build your sphinx project.
 
 
 .. code-block:: sh

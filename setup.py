@@ -19,7 +19,7 @@ setuptools.setup(
     long_description=pkg.__doc__,
     classifiers='''
 Programming Language :: Python
-Development Status :: 2 - Pore-Alpha
+Development Status :: 4 - Beta
 License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
 Programming Language :: Python :: 2
 Programming Language :: Python :: 2.6
