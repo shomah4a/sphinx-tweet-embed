@@ -15,19 +15,17 @@ setuptools.setup(
     author=pkg.__author__,
     license=pkg.__license__,
     url='https://github.com/shomah4a/sphinx-tweet-embed',
-    description=u'',
+    description='''embedding twitter's tweet in sphinx''',
     long_description=pkg.__doc__,
-    entry_points={
-        'console_scripts':[],
-        },
     classifiers='''
 Programming Language :: Python
 Development Status :: 2 - Pore-Alpha
-License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
 Programming Language :: Python :: 2
 Programming Language :: Python :: 2.6
 Programming Language :: Python :: 2.7
-Topic :: Software Development :: Libraries :: Python Modules
-Topic :: Utilities
+Programming Language :: Python :: 3
+Programming Language :: Python :: 3.3
+Topic :: Software Development :: Documentation
 '''.strip().splitlines())
 
