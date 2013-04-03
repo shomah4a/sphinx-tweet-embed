@@ -8,6 +8,15 @@ Welcome to tweettest's documentation!
 
 Contents:
 
+あいうえお :tw:`てすと <@shomah4a>` かきくけこ
+
+あいうえお :tw:`てすと <shomah4a>` かきくけこ
+
+あいうえお :tw:`@shomah4a` かきくけこ
+
+あいうえお :tw:`shomah4a` かきくけこ
+
+
 .. toctree::
    :maxdepth: 2
 
