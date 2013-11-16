@@ -28,7 +28,7 @@ finally, build your sphinx project.
    $ make html
 '''
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 __author__ = '@shomah4a'
 __license__ = 'LGPLv3'
 
@@ -36,13 +36,17 @@ __license__ = 'LGPLv3'
 
 def setup(app):
 
-    from . import tweet, user
+    from . import tweet, user, timeline
 
     app.add_javascript('http://platform.twitter.com/widgets.js')
 
     app.add_node(tweet.tweet,
                  html=(tweet.visit, tweet.depart))
     app.add_directive('tweet', tweet.TweetDirective)
+
+    app.add_node(timeline.timeline,
+                 html=(timeline.visit, timeline.depart))
+    app.add_directive('timeline', timeline.TimelineDirective)
 
     app.add_node(user.twnode,
                  html=(user.visit, user.depart))

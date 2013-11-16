@@ -52,7 +52,7 @@ def tw_role(role, rawtext, text, lineno, inliner, options={}, content=[]):
         return [make_node(m.group(0))], []
 
 
-    raise errors.TwitterError('invalid format: {0}'.format(text))
+    raise errors.TwitterError(u'invalid format: {0}'.format(text))
 
 
 
