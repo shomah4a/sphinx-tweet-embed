@@ -32,6 +32,13 @@ Contents:
 .. tweet:: https://twitter.com/mizchi/status/311696358501392386
 
 
+.. tweet:: https://twitter.com/cocoatomo/status/671427323804057601
+
+
+.. tweet:: https://twitter.com/cocoatomo/status/671427323804057601
+   :hide-thread:
+
+
 Indices and tables
 ==================
 
