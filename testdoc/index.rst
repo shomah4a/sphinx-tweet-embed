@@ -36,7 +36,7 @@ Contents:
 
 
 .. tweet:: https://twitter.com/cocoatomo/status/671427323804057601
-   :hide-thread:
+   :display-thread:
 
 
 Indices and tables
@@ -45,4 +45,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

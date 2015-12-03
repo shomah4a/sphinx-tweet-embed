@@ -17,6 +17,10 @@ then use `tweet` directive and `tw` role.
 
    .. tweet:: https://twitter.com/pypi/status/315214320826978305
 
+   You can use display-thread flag to display replyes.
+
+   .. tweet:: https://twitter.com/pypi/status/315214320826978305
+
    :tw:`@shomah4a`
 
    .. timeline:: 319830355039371264
@@ -30,7 +34,7 @@ finally, build your sphinx project.
    $ make html
 '''
 
-__version__ = '0.3.0'
+__version__ = '0.4.0'
 __author__ = '@shomah4a'
 __license__ = 'LGPLv3'
 
@@ -53,4 +57,3 @@ def setup(app):
     app.add_node(user.twnode,
                  html=(user.visit, user.depart))
     app.add_role('tw', user.tw_role)
-

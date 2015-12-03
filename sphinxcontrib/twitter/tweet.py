@@ -13,7 +13,7 @@ class tweet(nodes.General, nodes.Element):
 def visit(self, node):
 
     tag = u'''<blockquote class="twitter-tweet" %s><a href="%s">%s</a></blockquote>''' \
-          % ('data-conversation="none"' if node.hide_thread else '', node.url, node.url)
+          % ('data-conversation="none"' if not node.display_thread else '', node.url, node.url)
 
     self.body.append(tag)
 
@@ -34,7 +34,7 @@ class TweetDirective(rst.Directive):
     optional_arguments = 1
     final_argument_whitespace = False
     option_spec = {
-        'hide-thread': rst.directives.flag,
+        'display-thread': rst.directives.flag,
     }
 
 
@@ -44,7 +44,6 @@ class TweetDirective(rst.Directive):
 
         node.url = self.arguments[0]
 
-        node.hide_thread = 'hide-thread' in self.options
+        node.display_thread = 'display-thread' in self.options
 
         return [node]
-
