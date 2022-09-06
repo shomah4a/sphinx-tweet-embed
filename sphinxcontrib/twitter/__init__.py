@@ -44,7 +44,7 @@ def setup(app):
 
     from . import tweet, user, timeline
 
-    app.add_javascript('https://platform.twitter.com/widgets.js')
+    app.add_js_file('https://platform.twitter.com/widgets.js')
 
     app.add_node(tweet.tweet,
                  html=(tweet.visit, tweet.depart))
